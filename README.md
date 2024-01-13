@@ -1,3 +1,14 @@
+# Bug fix - https://github.com/curdeveryday/vscode-m5stack-mpy/issues/45
+Build and deploy.
+```bash
+git clean -fdX
+yarn cache clean
+yarn
+npm install -g vsce
+vsce package
+code --install-extension vscode-m5stack-mpy-1.1.10.vsix 
+```
+
 # vscode-m5stack-mpy
 
 A extension for M5Stack Micropython system.
